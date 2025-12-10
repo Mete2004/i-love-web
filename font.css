@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'font-test';
+    src: url('fonts/PixelFont-Regular.otf') format('opentype');
+
+}
+
+body {
+    font-family: 'font-test', Arial, sans-serif;
+    /* max-width: 200cm; */
+}
