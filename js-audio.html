@@ -1,0 +1,18 @@
+<!doctype html>
+<title>Audio met JS</title>
+<script type="module">
+// Laad het geluid in
+
+const button = document.querySelector('btn');
+
+button.addEventListener('click', function() {
+    // Speel het geluid af
+const player = new Tone.Player(
+	"https://tonejs.github.io/audio/berklee/gong_1.mp3"
+).toDestination();
+Tone.loaded().then(() => {
+	player.start();
+});
+});
+</script>
+<button id="btn">Koop die pizza</button>
