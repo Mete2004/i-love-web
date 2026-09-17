@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .demo {
+            padding: 100vh 1rem;
+        }
+
+        .demo-card {
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 1rem;
+
+            animation: reveal linear;
+            animation-timeline: view(block);
+            animation-range: entry 0% cover 50%;
+        }
+
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="demo">
+        <article class="demo-card">
+            <h2>Info 01</h2>
+            <p>Deze card animeert wanneer hij in beeld komt.</p>
+        </article>
+    </section>
+</body>
+</html>
